@@ -1,2 +1,1 @@
-# theory-of-computation
-Introduction to the Theory of Computation
+# Introduction to the Theory of Computation
