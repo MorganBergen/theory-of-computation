@@ -1,3 +1,17 @@
 # Introduction to the Theory of Computation
 
-![class-1](https://user-images.githubusercontent.com/65584733/186706947-271058fa-29b7-4e8a-9969-58e17763ef27.jpeg)
+## Description
+
+1. Automata, Computability, and Complexity
+2. Mathmatical Notations and Terminology
+3. Definition, Theorems, and Proofs
+4. Types of Proofs
+5. Regular Languages
+6. Finite Automata
+7. Nondeterminism
+8. Regular Expressions
+
+### Support
+[companion site](http://www-db.stanford.edu/~ullman/ialc.html)
+
+![class-2](https://user-images.githubusercontent.com/65584733/188205912-7f27d073-ee79-45c3-b8ff-c7acd94a56ec.jpeg)
