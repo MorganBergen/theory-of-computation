@@ -14,4 +14,5 @@
 ### Support
 [companion site](http://www-db.stanford.edu/~ullman/ialc.html)
 
-![class-2](https://user-images.githubusercontent.com/65584733/188205912-7f27d073-ee79-45c3-b8ff-c7acd94a56ec.jpeg)
+![01-preliminaries-2](https://user-images.githubusercontent.com/65584733/188156760-9588f40a-05a7-4f99-ade6-fd7582b24506.jpg)
+
