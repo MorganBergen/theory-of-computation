@@ -1,5 +1,15 @@
 # Automata - the methods and the madness
 Intro to automata theory, languages, and computation
+
+![00-assignment-0](https://user-images.githubusercontent.com/65584733/189735141-8bd7d418-f775-4eae-b076-655a918970db.jpg)
+![00-assignment-1](https://user-images.githubusercontent.com/65584733/189735148-aadc4731-a3a3-448b-a44a-dfadf6d818af.jpg)
+![00-assignment-2](https://user-images.githubusercontent.com/65584733/189735152-52fdaa91-d7bf-4945-a884-27648831f64e.jpg)
+![00-assignment-3](https://user-images.githubusercontent.com/65584733/189735155-c0af1f66-fed1-47f1-9a55-4080c0964688.jpg)
+![00-assignment-4](https://user-images.githubusercontent.com/65584733/189735158-65e5871b-0f79-41ed-a500-7b6466aafac5.jpg)
+![00-assignment-5](https://user-images.githubusercontent.com/65584733/189735164-2564caff-602d-4d20-8661-1f64a43d19ed.jpg)
+![00-assignment-6](https://user-images.githubusercontent.com/65584733/189735172-1c6fadee-0fec-462d-a748-78acbff98f13.jpg)
+![00-assignment-7](https://user-images.githubusercontent.com/65584733/189735175-c5ce4f70-098e-4a34-b0bf-df5598babcf5.jpg)
+
 ## Preliminary math review
 
 ### 1. Alphabet $\Sigma$
