@@ -146,7 +146,6 @@ then (something_else) { conclusion }
 (something) => (something_else)
 
 ```
-
 ### 7.  Proving If-And-Only-If Statements 
 
 They are proved by showing `if-then` statements in both directions.  A similar kind of theorem claims the equality of the sets described in two different ways; these are proved by showing that each of the two sets is contained in the other.
@@ -160,7 +159,6 @@ They are proved by showing `if-then` statements in both directions.  A similar k
 
 (something) <=> (something_else)
 ```
-
 ### 8.  Proving the Contrapositive
 
 Somethimes it is easier to prove a statement of the form `if H then C` by proving the equivalent statement:  `if not C then not H`.  The latter is called the contrapositive of the former.
