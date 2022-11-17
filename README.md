@@ -1,9 +1,13 @@
 # Introduction to the Theory of Computation
 
-## Description
-
 
 1. Finite Automata
+
+here is the link in the directory to the md file with finite automata
+
+[finite automata](/course/chapters/finite_automata.md)
+
+
 2. Deterministic Finite Automata
 3. Non-Deterministic Finite Automata
 4. Finite Automata with Epsilon-Transitions
