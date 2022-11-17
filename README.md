@@ -5,7 +5,7 @@
 
 here is the link in the directory to the md file with finite automata
 
-[finite automata](/course/chapters/finite_automata.md)
+[finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/finite-automata.md)
 
 
 2. Deterministic Finite Automata
