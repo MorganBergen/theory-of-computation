@@ -111,8 +111,56 @@ The transition table corresponding to the function $\delta$ of the previous exam
 
 |   | $0$ | $1$ |
 |:-:|:-:|:-:|
-|$\rightarrow$ $q0$ | $q0$ | $q1$ |
-|$\space \space \space \space$    $q1$ | $q1$ | $q1$ |
-| $\space \space \space \space$   $q2$ | $q2$ | $q2$ |
+|$\rightarrow$ $q_{0}$ | $q_{2}$ | $q_{0}$ |
+|$\space \space \space \space$    $q_{1}$ | $q_{1}$ | $q_{1}$ |
+| $\space \space \space \space$   $q_{2}$ | $q_{2}$ | $q_{1}$ |
 
 We have also shown two other features of a transition table.  The start state is marked with an arrow, and the accepting states are marked with a star.  Since we can deduce the sets of states and input symbols by looking at the row and column heads, we can now read from the transition table all of the information we need to specify the finite automaton uniquely.
+
+## extending the transition function to strings
+
+Informally speaking a DFA defines a language as the set of all strings that result in a sequence of state transitions from the start state to an accepting state.  In terms of the transition diagram, the language of a DFA is the set of labels along all the paths that lead from the start state to any accepting state.
+
+Formally speaking we need to the language of a DFA must require the definition of an _extended transition function_ that describes what happens when we start in any state and follow any sequence of inputs.  If $\delta$ is our transition function, then the extended transition function constructed from $\delta$ will be called $\hat{\delta}$.  The extended transition function $\hat{\delta}$.  
+
+The extended transition function is a function that takes a state $q$ and a string $w$ and returns a state $p$ - the state that the automaton reaches when starting in state $q$ and processing the sequence of inputs $w$.
+
+$$\hat{\delta}(q, w) = p$$
+
+We defined $\hat{\delta}$ by induction on the length of the input string, as follows:
+
+**basis**
+
+$\hat{\delta}(q, \epsilon) = q$  That is, if we are in state $q$ and read no inputs, then we are still in state $q$.
+
+**induction**
+
+Suppose $w$ is a string of the form $xa$; that is, $a$ is the last symbol of $w$, and $x$ is the string consisting of all but the last symbol.  For example $w = 1101$ is broken into $x = 110$ & $a = 1$.  Then
+
+$$\hat{\delta}(q, w) = \hat{\delta}(\delta(q, x), a)$$
+
+To compute $\hat{\delta}(q, w)$, we first compute $\hat{\delta}(q, x)$, the state that the automaton is after processing all but the last symbol of w.  Suppose this state is $p$; that is, $\hat{\delta}(q, x) = p$.  Then $\hat{\delta}(q, w)$ is what we get by making a transition from state $p$ on input $a$, the last symbol of $w$.  That is, $\hat{\delta}(q, w) = \delta(p, a)$.
+
+## example
+
+Let us design a DFA to accept the language...
+
+$$L = \{{w | w \text{ has both an even number of 0s and an even number of 1s}}\}$$
+
+The DFA will count both the number of 0s and the number of 1s in modulo 2.  That is, the state is used to remember whether the number of 0s seen so far is even or odd, and also to remember whether the number of 1s seen so far is even or odd.  There are four state, which can be given the following interpretations:
+
+$q_{0} = \text{even 0s, even 1s}$
+
+$q_{1} = \text{odd 0s, even 1s}$
+
+$q_{2} = \text{even 0s, odd 1s}$
+
+$q_{3} = \text{odd 0s, odd 1s}$
+
+$q_{0}$ is both the state state and the lone accepting state.
+
+⎯  $q_{0}$ is the start state, because before reading any inputs, the numbers of 0s and 1s seen so far are both zero, and zero is even.
+
+⎯  $q_{0}$ is an accepting state, because if the number of 0s and 1s seen so far are both even, then the number of 0s and 1s seen so far must be even.
+
+[]()
