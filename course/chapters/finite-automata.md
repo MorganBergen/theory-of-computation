@@ -163,4 +163,5 @@ $q_{0}$ is both the state state and the lone accepting state.
 
 ⎯  $q_{0}$ is an accepting state, because if the number of 0s and 1s seen so far are both even, then the number of 0s and 1s seen so far must be even.
 
-[]()
+<img width="742" alt="Screenshot 2022-11-18 at 12 43 44 PM" src="https://user-images.githubusercontent.com/65584733/202779595-e6393f54-3033-4d02-b831-dd2f2c7a4187.png">
+
