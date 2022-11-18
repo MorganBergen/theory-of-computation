@@ -30,7 +30,7 @@ where $M$ is the name of the automaton, $Q$ is the set of states, $\Sigma$ is th
 
 ### how a DFA processes strings
 
-The first thing we need to understand about a DFA is how the DFA decides whether or not to "accept" a sequence of input symbols.  The "language" of the DFA is the set of all strings that the DFA accepts.  Suppose $a_{1}, a_{2}, \dots , a_{n}$ is a sequence of input symbols.  We start out with teh DFA in its start state, $q_{0}$.  We consult the transition function $\delta$, say $\delta(q_{0}, a_{1}) = q_{1}$ to find the state that the DFA _$A$_ enters after processing the first input symbol $a_{1}$.  We process the next input symbol, $a_{2}$ by evaulating $\delta(q_{1}, a_{2})$; let us suppose this state is $q_{2}$.  We continue in this manner, finding states $q_{3}, q_{4}, \dots , q_{n}$ such that $\delta(q_{i-1}, a_{i}) = q_{i}$ for each $i$.  
+The first thing we need to understand about a DFA is how the DFA decides whether or not to "accept" a sequence of input symbols.  The "language" of the DFA is the set of all strings that the DFA accepts.  Suppose $a_{1}, a_{2}, \dots , a_{n}$ is a sequence of input symbols.  We start out with the DFA in its start state, $q_{0}$.  We consult the transition function $\delta$, say $\delta(q_{0}, a_{1}) = q_{1}$ to find the state that the DFA _$A$_ enters after processing the first input symbol $a_{1}$.  We process the next input symbol, $a_{2}$ by evaulating $\delta(q_{1}, a_{2})$; let us suppose this state is $q_{2}$.  We continue in this manner, finding states $q_{3}, q_{4}, \dots , q_{n}$ such that $\delta(q_{i-1}, a_{i}) = q_{i}$ for each $i$.  
 
 **If** $q_{n} \in F$, 
 
@@ -81,6 +81,38 @@ Specifying a DFA as a five-tuple with a detailed description of the transition f
 
 A transition diagram for the DFA $M$ is shown below.  The states are represented as circles, and the input symbols are represented as arrows.  The transition diagram for the DFA $M$ is shown below.
 
+$$M = (Q, \Sigma, \delta, q_{0}, F)$$
+
 a)  For each state in $Q$ there is a node
 
-b)  For each state $q$ in $Q$ and each input symbol 
+b)  For each state $q$ in $Q$ and each input symbol $a$ in $\Sigma$, let $\delta(q, a) = p$.  Then the transition diagram has an arc from node $q$ to node $p$, labeled $a$.  If there are several input symbols that cayse transitions from $q$ to $p$, then the transition diagram can have one arc, labeled by the list of these symbols.
+
+c)  There is an arrow into the start state $q_{0}$ labeled $\text{Start}$.  This arrow does not originate at any node.
+
+d)  Nodes corresponding to accepting states (those in $F$) are marched by a double circle.  States not in $F$ have a single circle.
+
+**Example**  The following diagram shows the transition diagram for the DFA that we designed from our previous example.  There are three nodes that correspond to the three states.  There is a $\text{Start}$ arrow entering the start state $q_{0}$, and the one accepting state, $q_{1}$, is represented by a double circle.  Out of each state is one arc labeled 0 and one arc labeled 1 .  The arc each correpond to one of the $\delta$ facts developed in the previous example.
+
+[here](https://i.imgur.com/0Z7Z7Zm.png)
+
+**Transition table for DFA $M$**
+
+A _transition table_ is a convention, tabular prepresentation of the $\delta$ function, that takes two arguments and returns a value. 
+
+⎯  the rows correpond to the states
+
+⎯  the collumns correspond to the inputs
+
+The entry for the row corresponding to state $q$ and the column corresponding to input $a$ is the state $\delta(q, a)$
+
+## example
+
+The transition table corresponding to the function $\delta$ of the previous example is shown below
+
+|   | $0$ | $1$ |
+|:-:|:-:|:-:|
+|$\rightarrow$ $q0$ | $q0$ | $q1$ |
+|$\space \space \space \space$    $q1$ | $q1$ | $q1$ |
+| $\space \space \space \space$   $q2$ | $q2$ | $q2$ |
+
+We have also shown two other features of a transition table.  The start state is marked with an arrow, and the accepting states are marked with a star.  Since we can deduce the sets of states and input symbols by looking at the row and column heads, we can now read from the transition table all of the information we need to specify the finite automaton uniquely.
