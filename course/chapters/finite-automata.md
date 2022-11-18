@@ -165,3 +165,64 @@ $q_{0}$ is both the state state and the lone accepting state.
 
 <img width="742" alt="Screenshot 2022-11-18 at 12 43 44 PM" src="https://user-images.githubusercontent.com/65584733/202779595-e6393f54-3033-4d02-b831-dd2f2c7a4187.png">
 
+The DFA for language $L$ is...
+
+$$M = (\{{q_{0}, q_{1}, q_{2}, q_{3}}\}, \{0, 1\}, \delta, q_{0}, \{q_{0}\})$$
+
+where the transition function $\delta$ is defined by the transition diagram.
+
+**observations:**
+
+Each input 0 causes the state to cross the horizontal, dashed line.
+
+After seeing aneven number of 0s we are always above the line, in states $q_{0}$ or $q_{1}$ while after seeing an odd number of 0s we are always below the line, in state $q_{2}$ or $q_{3}$.  
+
+Every 1 causes the state to cross the veritical, dashed line.  Thus after seeing an even number of 1s, we are always to the left, in state $q_{0}$ or $q_{2}$, while after seeing an odd number of 1s we are to the right, in state $q_{1}$ or $q_{3}$.  
+
+These observations are an informal proof that the four states have the interpretations attributed to them.  However, one could prove the correctness of our claims about the states formally, but a mutual induction in the spirit of example 1.23.  
+
+**transition table**
+
+The transition table for the DFA is shown below.
+
+|   | $0$ | $1$ |
+|:-:|:-:|:-:|
+|$\star \rightarrow$ $q_{0}$ | $q_{2}$ | $q_{1}$ |
+|$\space \space \space \space \space$   $q_{1}$ | $q_{3}$ | $q_{0}$ |
+|$\space \space \space \space \space$   $q_{2}$ | $q_{0}$ | $q_{3}$ |
+|$\space \space \space \space \space$   $q_{3}$ | $q_{1}$ | $q_{2}$ |
+
+Let us illusrtate the construction of $\hat{\delta}$ from it stransition function $\delta$.  Suppose the input is $110101$.  Since this string has an even number of zeros and ones, we expect that it is in the language.  Thus we expect that $\hat{\delta}(q_{0}, 110101) = q_{0}$, since $q_{0}$ is the only accepting state.  
+
+In order to verify the claim that $\hat{\delta}(q_{0}, 110101) = q_{0}$, we will compute $\hat{\delta}(q_{0}, w)$ for each prefix $w$ of $110101$, starting at $\epsilon$ and going in increasing size.  The summary of this calculation is:
+
+-- $\hat{\delta}(q_{0}, \epsilon) = q_{0}$
+
+-- $\hat{\delta}(q_{0}, 1) = \hat{\delta}(\delta(q_{0}, \epsilon), 1) = \delta(q_{0}, 1) = q_{1}$
+
+-- $\hat{\delta}(q_{0}, 11) = \hat{\delta}(\delta(q_{0}, 1), 1) = \delta(q_{1}, 1) = q_{0}$
+
+-- $\hat{\delta}(q_{0}, 110) = \hat{\delta}(\delta(q_{0}, 11), 0) = \delta(q_{0}, 0) = q_{2}$
+
+-- $\hat{\delta}(q_{0}, 1101) = \hat{\delta}(\delta(q_{0}, 110), 1) = \delta(q_{2}, 1) = q_{3}$
+
+
+-- $\hat{\delta}(q_{0}, 11010) = \hat{\delta}(\delta(q_{0}, 1101), 0) = \delta(q_{3}, 0) = q_{1}$
+
+-- $\hat{\delta}(q_{0}, 110101) = \hat{\delta}(\delta(q_{0}, 11010), 1) = \delta(q_{1}, 1) = q_{0}$
+
+Thus $\hat{\delta}(q_{0}, 110101) = q_{0}$, as expected.
+
+
+## the language of a DFA
+
+The _language_ of a DFA $M = (Q, \Sigma, \delta, q_{0}, F)$.  This language is deboted by $L(M)$  "the language of the machine".  
+
+$$L(M) = \{{w | \hat{\delta}(q_{0}, w) \in F}\}$$
+
+That is, the language of $M$ is the set of strings $w$ that take the start state $q_{0}$ to one of the accepting states.  If $L$ is $L(M)$ for some DFA $M$, then we say $L$ is a _regular language_.  
+
+
+
+
+
