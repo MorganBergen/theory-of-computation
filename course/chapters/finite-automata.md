@@ -77,9 +77,10 @@ Specifying a DFA as a five-tuple with a detailed description of the transition f
 
 2.  A _transition table_ is a tabular listing of the $\delta$ function.  Which by implication tells us the set of states and the input alphabet.
 
-af
+**Transition diagram for DFA $M$**
 
+A transition diagram for the DFA $M$ is shown below.  The states are represented as circles, and the input symbols are represented as arrows.  The transition diagram for the DFA $M$ is shown below.
 
+a)  For each state in $Q$ there is a node
 
-
-
+b)  For each state $q$ in $Q$ and each input symbol 
