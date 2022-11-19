@@ -223,6 +223,3 @@ $$L(M) = \{{w | \hat{\delta}(q_{0}, w) \in F}\}$$
 That is, the language of $M$ is the set of strings $w$ that take the start state $q_{0}$ to one of the accepting states.  If $L$ is $L(M)$ for some DFA $M$, then we say $L$ is a _regular language_.  
 
 
-
-
-
