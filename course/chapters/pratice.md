@@ -19,19 +19,40 @@
 
 3.  give an english language description of the regular expression 
 
-$$ (0^{*}1^{*})^{*}000(0 + 1)^{*} $$
+$$ (((0^{*})(1^{*}))^{*})000((0 + 1)^{*}) $$
 
 ## homework 3
 
-1.  ${(0^{n})(10^{n}) \mid n \geq 1}$
+Prove that one of the following languages is not regular:
 
-2.  ${(0^{n})(1^{m}) \mid n \leq m}$
+1.  $\{{(0^{n})(10^{n}) \mid n \geq 1\}}$
 
-3.  ${(0^{n})(1^{2n}) \mid n \geq 1}$
+2.  $\{{(0^{n})(1^{m}) \mid n \leq m\}}$
 
+3.  $\{{(0^{n})(1^{2n}) \mid n \geq 1\}}$
 
+## homework 4
 
+Give a context-free grammar for each of the following languages:
 
+1.  $\{0^{n}1^{n} \mid n \in \mathbb{N}\}$
 
+2.  the language of a balanced parentheses which contain the strings 
 
+$\epsilon$ , $()$ , $(())$, $()()$, $\dots$
 
+3.  $\{0^{m}1^{n} \mid m \leq n \}$
+
+4.  the language of lists of x's which contain the strings
+
+$[]$, $[x]$, $[x, x]$, $\dots$
+
+## homework 5
+
+Design PDAs to accept the following languages by either final state or by empty stack, whichever is most convenient for the particular language.
+
+1.  $\{0^{n}1^{n} \mid n \geq 1\}$
+
+2.  the language of balanced parentheses 
+
+3.  the language over $\{i, e\}$, where all prefixes for every string conatin at least as many <code style="color:red"> i </code>s than <code style="color:red"> e </code>s.  Think of an <code style="color:red"> i </code> as representing an <code style="color:red"> if </code> block and an <code style="color:red"> e </code> as representing an <code style="color:red"> else </code> 
