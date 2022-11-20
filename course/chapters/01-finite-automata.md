@@ -259,6 +259,88 @@ Construct an NFA that accepts all and only the strings of 0's and 1's that end i
 
 <img width="742" alt="ex" src="https://user-images.githubusercontent.com/65584733/202918052-f1fdc087-342b-4a3b-97ee-46abefd4de26.png">
 
+### formal definition of nondeterministic finite automata
 
+A nondeterministic finite automaton (NFA) is a quintuple 
+
+$$M = (Q, \Sigma, \delta, q_{0}, F)$$
+
+- $Q$ is a finite set of states
+
+- $\Sigma$ is a finite set of input symbols
+
+- $\delta: Q \times \Sigma \rightarrow 2^{Q}$ is the transition function
+
+- $q_{0} \in Q$ is the start state
+
+- $F \subseteq Q$ is the set of accepting states
+
+The only difference between an NFA and DFA is the type of value that $\delta$ returns.  In the DFA, $\delta$ returns a single state, while in the NFA, $\delta$ returns a set of states. 
+
+
+$$ M = (Q, \Sigma, \delta, q_{0}, F) $$
+
+$$ <=> $$
+
+$$ M = (\{q_{0}, q_{1}, q_{2}\}, \{0, 1\}, \delta, q_{0}, \{q_{2}\}) $$
+
+**transition function $\delta$**
+
+| 	  | $0$     | $1$     |
+|-------:|:-------:|:-------:|
+| $\rightarrow q_{0}$ | $\{q_{0}, q_{1}\}$ | $\{q_{0}\}$ |
+| $q_{1}$ | $\emptyset$ | $\{q_{2}\}$ |
+| $\star q_{2}$ | $\emptyset$ | $\emptyset$ |
+
+Notice that transition tables can b e used to specify the transition function for an NFA as well as for a DFA The only difference is that each entry in the table for the NFA is a set even if the set is a singleton has one member. Also notice that when there is no transition at all from a given state on a given input symbol the proper entry is $\emptyset$ the empty set.
+
+### the extended transition function
+
+As for DFA's we need to extend the transition function $\delta$ of an NFA to a function $\hat{\delta}$, that takes a state $q$ and a string of input symbols $w$, and returns the set of states that the NFA is in if it starts in state $q$ and processes the string $w$.
+**formally we define $\hat{\delta}$ as follows**
+
+**basis** $\hat{\delta}(q, \epsilon) = \{q\}$
+
+Without reading any input symbols, the NFA is in state $q$, we are only in the state we began in.
+
+**induction** 
+
+Suppose $w$ is of the form $w = xa$, where $a$ is the final symbol of $w$ and $x$ is the rest of $w$. 
+
+$$\hat{\delta}(q, x) = \{{p_{1}, p_{2}, \dots, p_{k}\}}$$
+
+$$ => \hat{\delta}(q, w) = \bigcup_{q' \in \hat{\delta}(q, x)} \hat{\delta}(q', a)$$
+
+$$ => \hat{\delta}(q, w) = \{r_{1}, r_{2}, \dots, r_{k}\}$$
+
+**Let us use $\hat{\delta}$ to describe the processing of input 00101 by the NFA $M$.**
+
+1.  $\hat{\delta}(q_{0}, \epsilon) = \{q_{0}\}$
+
+2.  $\hat{\delta}(q_{0}, 0) = \delta(q_{0}, 0) = \{q_{0}, q_{1}\}$
+
+3.  $\hat{\delta}(q_{0}, 00) = \delta(q_{0}, 0) \cup \delta(q_{1}, 0) = \{q_{0}, q_{1}\} \cup \emptyset = \{q_{0}, q_{1}\}$
+
+4.  $\hat{\delta}(q_{0}, 001) = \delta(q_{0}, 1) \cup \delta(q_{1}, 1) = \{q_{0}\} \cup \{q_{2}\} = \{q_{0}, q_{2}\}$
+
+5.  $\hat{\delta}(q_{0}, 0010) = \delta(q_{0}, 0) \cup \delta(q_{2}, 0) = \{q_{0}, q_{1}\} \cup \emptyset = \{q_{0}, q_{1}\}$
+
+6.  $\hat{\delta}(q_{0}, 00101) = \delta(q_{0}, 1) \cup \delta(q_{1}, 1) = \{q_{0}\} \cup \{q_{2}\} = \{q_{0}, q_{2}\}$
+
+**explaination of the above**
+
+1.  is the basis rule, we are only in the state we began in.
+
+2.  by applying $\delta$ to the line state $q_{0}$ that is in the previous set, and get $\{q_{0}, q_{1}\}$ as a result
+
+3.  is obtained by taking the union over the two states in the previous set of what we get when we apply $\delta$ to them with input 0.  That is $\delta(q_{0}, 0) = \{q_{0}, q_{1})$ while $\delta(q_{1}, 0) = \emptyset$
+
+4.  We take the union of $\delta(q_{0}, 1) = \{q_{0}\}$ and $\delta(q_{1}, 1) = \{q_{2}\}$
+
+5.  similar to 3.
+
+6.  similar to 4.
+
+### the language of an NFA
 
 
