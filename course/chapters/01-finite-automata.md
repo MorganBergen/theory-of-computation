@@ -257,5 +257,6 @@ The $\delta$ is a function that takes a state and an input symbol as arguments, 
 
 Construct an NFA that accepts all and only the strings of 0's and 1's that end in 01.
 
-<img width="787" alt="Untitled" src="https://user-images.githubusercontent.com/65584733/202915934-f37965b2-e417-4d91-93bd-34aaa10eaed6.png">
+![ex](https://user-images.githubusercontent.com/65584733/202918025-3cb932e6-4590-40de-ba76-a3150711b5f5.png)
+
 
