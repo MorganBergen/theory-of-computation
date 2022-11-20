@@ -2,15 +2,21 @@
 
 ## homework 1
 
-1.  create a NFA that accepts binary strings that start with two 0s
+**1.  create a NFA that accepts binary strings that start with two 0s**
 
 ![q1](https://user-images.githubusercontent.com/65584733/202916547-7aa1e8ee-5a9a-4f40-bd07-51259cb826d3.png)
 
-2.  convert the NFA that accepts binary strings that start with two 0s to a DFA
+**2.  convert the NFA that accepts binary strings that start with two 0s to a DFA**
 
-3.  create an NFA that accepts binary strings which start and end with the same symbol.
+![q2](https://user-images.githubusercontent.com/65584733/202916988-c9caeb0b-548f-4c40-98f0-fc947ee89707.png)
 
-4.  convert the NFA that accepts binary strings which start and end with the same symbol to a DFA
+**3.  create an NFA that accepts binary strings which start and end with the same symbol.**
+
+![q3](https://user-images.githubusercontent.com/65584733/202916849-22d82d9e-94f4-4ee2-bd0f-f0a1e8619013.png)
+
+**4.  convert the NFA that accepts binary strings which start and end with the same symbol to a DFA**
+
+![q4](https://user-images.githubusercontent.com/65584733/202917396-920b8c0d-c749-42da-9ce9-5608be4f6296.png)
 
 
 ## homework 2
