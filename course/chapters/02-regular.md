@@ -50,14 +50,20 @@ The concatenation of languages $L$ and $M$ is the set of strings that can be for
 
 The first three strings in $LM$ are the strings in $L$ concatenated with the empty string $\epsilon$.  The last three strings are the strings in $L$ concatenated with the strings in $M$.  The last three strings are formed by taking each string in $L$ and concatenating it with the second string in $M$, which is $001$.  For instance, $10$ from $L$ concatenated with $001$ from $M$ gives us $10001$ for $LM$.  
 
-**$\star$ kleene star**
+**$\ast$ kleene star**
 
-The _closure_ or _star_ or _kleene closure_ or a language $L$ is denoted as $(L^{*})$ and is the set of all strings that can be formed by concatenating zero or more strings from $L$.  
+The _closure_ or _star_ or _kleene closure_ or a language $L$ is denoted as $(L^{\ast})$ and is the set of all strings that can be formed by concatenating zero or more strings from $L$.  
 
 For example, 
 
 `if` $L = \{001, 10, 111\}$
 
-`then` $(L^{*}) = \{\epsilon, 001, 10, 111, 001001, 10001, 111001, 001001001, \\ 10001001, 111001001, 001001001001, 10001001001, 111001001001, 001001001001001, \\ 10001001001001, 111001001001001, 001001001001001001, 10001001001001001, \dots\}$
+`then` $(L^{\ast}) = \{\epsilon, 001, 10, 111, 001001, 10001, 111001, 001001001,\\$
+$10001001, 111001001, 001001001001, 10001001001, 111001001001, 001001001001001,$ 
+$10001001001001, 111001001001001, 001001001001001001, 10001001001001001, \dots\}$
 
-$L$* represents the set of those strings can be 
+$L^{\ast}$ represents the set of those strings that can be formed by taking any number of strings from $L$, possibly with repetitions (i.e. the same string may be selected more than once) and concatenating all of them.  
+
+
+
+
