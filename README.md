@@ -1,7 +1,7 @@
 # Introduction to the Theory of Computation
 
 
-1. [finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/finite-automata.md)
+1. [finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/01-finite-automata.md)
 
 - Deterministic Finite Automata
 - Non-Deterministic Finite Automata
