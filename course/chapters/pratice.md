@@ -21,7 +21,7 @@
 
 **4.  convert the NFA that accepts binary strings which start and end with the same symbol to a DFA**
 
-![q4](https://user-images.githubusercontent.com/65584733/202917580-5f6436aa-6b52-4449-abff-64fb727316a3.png)
+![q4](https://user-images.githubusercontent.com/65584733/202917635-3c71865a-0069-42fb-a535-616b2101feaa.png)
 
 
 ## homework 2
