@@ -55,4 +55,10 @@ Design PDAs to accept the following languages by either final state or by empty 
 
 2.  the language of balanced parentheses 
 
-3.  the language over $\{i, e\}$, where all prefixes for every string conatin at least as many <code style="color:red"> i </code>s than <code style="color:red"> e </code>s.  Think of an <code style="color:red"> i </code> as representing an <code style="color:red"> if </code> block and an <code style="color:red"> e </code> as representing an <code style="color:red"> else </code> 
+3.  the language over $\{i, e\}$, where all prefixes for every string conatin at least as many <code style="color:red"> i </code>s than <code style="color:red"> e </code>s.  Think of an <code style="color:red"> i </code> as representing an <code style="color:red"> if </code> block and an <code style="color:red"> e </code> as representing an <code style="color:red"> else </code> branch.  Then this language re[resents the valid C-style, nested if-then-else blocks.  For example, <code style="color:red">iie</code> might correspond to the code <code style="color:red"> if (test1) { ... if (test2) { ... } else { ... } ... } </code>
+
+3.  the language over $\{i, e\}$, where all prefixes for every string conatin at least as many is than `e` Think of an  `i` as representing an `if` block and an `e` as representing an `else` branch.  Then this language re[resents the valid C-style, nested if-then-else blocks.  For example, `iie` might correspond to the code `if (test1) { ... if (test2) { ... } else { ... } ... }`
+
+## homework 6
+
+1.  Draw a graphical representation of a Turning machine that accepts the language $\{a^{n}b^{n}c^{n} \mid n \geq 1\}$

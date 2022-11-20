@@ -1,11 +1,7 @@
 # Introduction to the Theory of Computation
 
 
-1. Finite Automata
-
-here is the link in the directory to the md file with finite automata
-
-[finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/finite-automata.md)
+1. [finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/finite-automata.md)
 
 
 2. Deterministic Finite Automata
@@ -14,9 +10,6 @@ here is the link in the directory to the md file with finite automata
 
     1. Formal Notation for Epsilon-NFAs
     2. Epsilon-Closures
-    
-    ▶︎ page 75
-    
     3. Extended Transistions and Languages for Epsilon-NFAs
     4. Eliminating Epsilon-Transitions
 
