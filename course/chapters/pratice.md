@@ -4,7 +4,7 @@
 
 1.  create a NFA that accepts binary strings that start with two 0s
 
-![q1](https://user-images.githubusercontent.com/65584733/202916408-adae6a12-9e6e-458d-8da8-87a6292cfc8f.png)
+![q1](https://user-images.githubusercontent.com/65584733/202916547-7aa1e8ee-5a9a-4f40-bd07-51259cb826d3.png)
 
 2.  convert the NFA that accepts binary strings that start with two 0s to a DFA
 
