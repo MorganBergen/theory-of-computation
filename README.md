@@ -3,19 +3,18 @@
 
 1. [finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/finite-automata.md)
 
+- Deterministic Finite Automata
+- Non-Deterministic Finite Automata
+- Finite Automata with Epsilon-Transitions
+- Formal Notation for Epsilon-NFAs
+- Epsilon-Closure
+- Extended Transistions and Languages for Epsilon-NFAs
+- Eliminating Epsilon-Transitions
 
-2. Deterministic Finite Automata
-3. Non-Deterministic Finite Automata
-4. Finite Automata with Epsilon-Transitions
+2.  [regular expressions
 
-    1. Formal Notation for Epsilon-NFAs
-    2. Epsilon-Closures
-    3. Extended Transistions and Languages for Epsilon-NFAs
-    4. Eliminating Epsilon-Transitions
-
-5.  Regular Expressions
-    1. Finite Automata and Regular Expressions
-    2. Algebraic Laws of Regular Expressions
+- Finite Automata and Regular Expressions
+- Algebraic Laws of Regular Expressions
 
 6.  Regular Languages
     1. The Pumping Lemma
