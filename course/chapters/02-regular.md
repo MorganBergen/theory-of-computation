@@ -58,8 +58,8 @@ For example,
 
 `if` $L = \{001, 10, 111\}$
 
-`then` $(L^{\ast}) = \{\epsilon, 001, 10, 111, 001001, 10001, 111001, 001001001,\\$
-$10001001, 111001001, 001001001001, 10001001001, 111001001001, 001001001001001,$ 
+`then` $(L^{\ast}) = \{\epsilon, 001, 10, 111, 001001, 10001, 111001, 001001001$
+$10001001, 111001001, 001001001001, 10001001001, 111001001001, 001001001001001$ 
 $10001001001001, 111001001001001, 001001001001001001, 10001001001001001, \dots\}$
 
 $L^{\ast}$ represents the set of those strings that can be formed by taking any number of strings from $L$, possibly with repetitions (i.e. the same string may be selected more than once) and concatenating all of them.  
