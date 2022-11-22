@@ -365,24 +365,21 @@ As an example let us prove formally that the NFA accepts the language $L = \{{w 
 
 To prove these statements, we need to consider how $M$ can reach each state, i.e. what was the last input symbol, and in what state was $M$ just before reading that symbol?
 
-### equivalence of NFA's and DFA's
-
-Although there are many languagesn
-
-copilot how to accept one word at a time instaaed of tab fully
-
-
 ### differences between NFA's and DFA's
 
-DFA Deterministic Finite Automata
+<img src="https://user-images.githubusercontent.com/65584733/203384662-433349fa-7754-4173-b562-9d6b77acaaed.png" align="right" width="25%" height="25%" />
 
+DFA Deterministic Finite Automata
 - in a DFA, given the current state we know what the next state will be
 - it has only one unique next state for each input symbol
 - it has no choices or randomness
 - it is simple and easy to design
 
-NFA Non-deterministic Finite Automata
+<img src="https://user-images.githubusercontent.com/65584733/203384921-7c76daa8-e5c0-4f75-8b79-22685f4472f0.png" align="right" width="20%" height="20%" />
 
+NFA Non-deterministic Finite Automata
 - in a NFA, given the current state there could be multiple next states
 - the next state may be chosen at random
 - all the next states may be chosen in parallel
+
+
