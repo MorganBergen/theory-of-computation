@@ -15,22 +15,20 @@
 
 - Finite Automata and Regular Expressions
 - Algebraic Laws of Regular Expressions
-
-3.  Regular Languages
-    1. The Pumping Lemma
-    2. Closure Properties of Regular Languages
+- The Pumping Lemma
+- Closure Properties of Regular Languages
 
 3. Context-Free Grammars
-    1. Definition
-    2. Parse Trees
-    3. Ambiguity in Grammars and Languages
+- Definition
+- Parse Trees
+- Ambiguity in Grammars and Languages
 
 4.  Pushdown Automata
-    1.  Definition
-    2.  Languages of PDA
+- Definition
+- Languages of PDA
 
 5.  Context-Free Languages
-    1.  Equivalence of PDAs and CFGs
+Equivalence of PDAs and CFGs
     2.  Chomsky Normal Form for Context-Free Grammars
     3.  Closure Properties of Context-Free Languages
     4.  Decision Problems for CFLs
