@@ -39,7 +39,6 @@ Regular expressions denote languages, and languages are sets of strings.  For ex
 
 The union of two languages $L$ and $M$, denoted as $L \cup M$, is the set of strings that are in either $L$ or $M$, or both.  For example, if $L = \{001, 10, 111\}$ and $M = \{\epsilon, 001\}$, then $L \cup M = \{\epsilon, 10, 001, 111\}$
 
-
 **$\cdot$ concatenation**
 
 The concatenation of languages $L$ and $M$ is the set of strings that can be formed by taking any string in $L$ and concatenating it with any string in $M$.  The concatenation of a pair of strings is just one string followed by another to form the result.  The concatenation of languages is either with a dot or nothing at all.  For example, if
@@ -63,7 +62,5 @@ $10001001, 111001001, 001001001001, 10001001001, 111001001001, 001001001001001$
 $10001001001001, 111001001001001, 001001001001001001, 10001001001001001, \dots\}$
 
 $L^{\ast}$ represents the set of those strings that can be formed by taking any number of strings from $L$, possibly with repetitions (i.e. the same string may be selected more than once) and concatenating all of them.  
-
-
 
 

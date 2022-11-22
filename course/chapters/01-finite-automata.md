@@ -343,4 +343,46 @@ $$ => \hat{\delta}(q, w) = \{r_{1}, r_{2}, \dots, r_{k}\}$$
 
 ### the language of an NFA
 
+As we have suggested, an NFA accepts a string $w$ if it is possible to make any sequence of choices of next state, while reading the characters of $w$, and go from the start state to any accepting state.  The fact that other choices using the input symbols of $w$ lead to a nonaccepting state, or do not lead to any state at all (i.e. the sequence of states "dies"), does not prevent $w$ from being accepted by the NFA as a whole.
 
+**formally we define the language of an NFA as follows**
+
+`if` $M = (Q, \Sigma, \delta, q_{0}, F)$ is a NFA
+
+`then` $L(M) = \{w \in \Sigma^{\ast} | \hat{\delta}(q_{0}, w) \cap F \neq \emptyset\}$
+
+That is $L(M)$ is the set of string $w \in \Sigma^{\ast}$ such that $\hat{\delta}(q_{0}, w)$ contains at least one accepting state.
+
+### example
+
+As an example let us prove formally that the NFA accepts the language $L = \{{w | w \text{ ends in } 01 \}}$.  The proof is a mutual induction of the following three statements that characterize the three states:
+
+1.  $\hat{\delta}(q_{0}, w)$ contains $q_{0}$ for every $w$
+
+2.  $\hat{\delta}(q_{0}, w)$ contains $q_{1}$ if and only if $w$ ends in $0$
+
+3.  $\hat{\delta}(q_{0}, w)$ contains $q_{2}$ if and only if $w$ ends in $01$
+
+To prove these statements, we need to consider how $M$ can reach each state, i.e. what was the last input symbol, and in what state was $M$ just before reading that symbol?
+
+### equivalence of NFA's and DFA's
+
+Although there are many languagesn
+
+copilot how to accept one word at a time instaaed of tab fully
+
+
+### differences between NFA's and DFA's
+
+DFA Deterministic Finite Automata
+
+- in a DFA, given the current state we know what the next state will be
+- it has only one unique next state for each input symbol
+- it has no choices or randomness
+- it is simple and easy to design
+
+NFA Non-deterministic Finite Automata
+
+- in a NFA, given the current state there could be multiple next states
+- the next state may be chosen at random
+- all the next states may be chosen in parallel
