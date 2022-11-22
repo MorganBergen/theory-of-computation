@@ -29,29 +29,27 @@
 
 5.  Context-Free Languages
 Equivalence of PDAs and CFGs
-    2.  Chomsky Normal Form for Context-Free Grammars
-    3.  Closure Properties of Context-Free Languages
-    4.  Decision Problems for CFLs
+- Chomsky Normal Form for Context-Free Grammars
+- Closure Properties of Context-Free Languages
+- Decision Problems for CFLs
 
 6. Turing Machines
-    1. Definition
-    2. Undecidability
-    3. Undecidable Problems about Turing Machines
-    4. Post's Correspondence Problem
+- Definition
+- Undecidability
+- Undecidable Problems about Turing Machines
+- Post's Correspondence Problem
 
 7. Intractable Problems
-    1. P and NP Classes
-    2. The SAT problem
-    3. Restricted SAT problems
-    4. Independent Sets
-    5. Directed Hamiltonian-Circuit
-    6. Undirected Hamiltonian-Circuit
-    7. Traveling Salesman Problem
+- P and NP Classes
+- The SAT problem
+- Restricted SAT problems
+- Independent Sets
+- Directed Hamiltonian-Circuit
+- Undirected Hamiltonian-Circuit
+- Traveling Salesman Problem
 
 ### Support
 [companion site](http://www-db.stanford.edu/~ullman/ialc.html)
-
-![01-preliminaries-2](https://user-images.githubusercontent.com/65584733/188156760-9588f40a-05a7-4f99-ade6-fd7582b24506.jpg)
 
 
 
