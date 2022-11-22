@@ -75,3 +75,18 @@ Design PDAs to accept the following languages by either final state or by empty 
 ## homework 6
 
 1.  Draw a graphical representation of a Turning machine that accepts the language $\{a^{n}b^{n}c^{n} \mid n \geq 1\}$
+
+
+### exercises from the book
+
+
+**exercise 3.1.1**
+
+write a regular expression for the following languages:
+
+a.  the set of strings over alphabet {a, b, c} containing at least one a and at least one b
+
+**answer** 
+
+$$ (a + b + c)^{\ast}a(a + b + c)^{\ast}b(a + b + c)^{\ast} $$
+
