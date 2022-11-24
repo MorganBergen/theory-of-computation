@@ -48,7 +48,7 @@ Equivalence of PDAs and CFGs
 - Undirected Hamiltonian-Circuit
 - Traveling Salesman Problem
 
-### Support
+**support**
 [companion site](http://www-db.stanford.edu/~ullman/ialc.html)
 
 
