@@ -2,6 +2,9 @@
 
 ![](./info/link.html)
 
+
+![](./info/here.svg)
+
 1. [finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/01-finite-automata.md)
 
 - Deterministic Finite Automata
