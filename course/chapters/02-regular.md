@@ -143,4 +143,15 @@ union - $A \cup B = \{pq, \rho, t, UV\}$
 
 concatenation -  $A \circ B = {\{pqt, pqUV, {\rho}t, {\rho}UV\}}$
 
+star - $A^{\ast} = \{\epsilon, pq, \rho, pqpq, pq\rho, \rho pq, \rho \rho, pqpqpq, pqpq\rho, pq\rho pq, pq\rho \rho, \rho pqpq, \rho pq\rho, \rho \rho pq, \rho \rho \rho, \cdots\}$
+
+**theorem 1**  The class of regular languages is closed under UNION $\cup$
+
+- The union of two regular languages is a regular language
+
+**theorem 2**  The class of regular languages is closed under CONCATENATION $\circ$
+
+- The concatenation of two regular languages is a regular language
+
+
 
