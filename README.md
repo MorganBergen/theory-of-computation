@@ -1,6 +1,6 @@
 # Introduction to the Theory of Computation
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![](./link.html)
 
 1. [finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/01-finite-automata.md)
 
