@@ -3,8 +3,6 @@
 
 [![foo](./info/thumbnail.jpg)](https://www.youtube.com/playlist?list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev)
 
-
-
 ![](./info/here.svg)
 
 1. [finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/01-finite-automata.md)

@@ -153,5 +153,4 @@ star - $A^{\ast} = \{\epsilon, pq, \rho, pqpq, pq\rho, \rho pq, \rho \rho, pqpqp
 
 - The concatenation of two regular languages is a regular language
 
-
-
+![img](./figures/00-ex.png)
