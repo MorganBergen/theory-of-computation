@@ -1,6 +1,10 @@
 # Introduction to the Theory of Computation
 
+<<<<<<< HEAD
 ![](link.html)
+=======
+![](./info/link.html)
+>>>>>>> 6517d5b (her)
 
 1. [finite automata](https://github.com/MorganBergen/theory-of-computation/blob/main/course/chapters/01-finite-automata.md)
 
