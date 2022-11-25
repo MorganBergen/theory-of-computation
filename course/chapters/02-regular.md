@@ -106,4 +106,41 @@ Let us write a regular expression for the set of strings that consist of alterna
 First let us develop a regular expression for the language consisting of the single string $01$.  We can then use the star operator to get an expression for all strings of the form $0101 \cdots 01$
 
 
+-----------------
+
+## regular languages
+
+A regylar language is said to be a regular language if and only if some Finite State Machine (DFA or NFA) can recognize it.  In other words, a regular language is a language that can be recognized by a finite state machine.  The set of all regular languages is denoted by $L_{reg}$.
+
+**non regular languages**
+
+- which are not recognized by any FSM
+- which require memory
+- memory of DFA or NFA is very limited, it cannot store or count strings
+
+**example**
+
+- $L = \{a^{n}b^{n} | n \geq 0\}$ is not regular
+	- $aaabbb$
+	- $aaabbbabbb$
+
+- $ababbababb$
+
+These languages/strings require memory
+**operations on regular languages**
+
+union - $A \cup B = \{x | x \in A \lor x \in B\}$
+
+concatenation - $A \cdot B = \{xy | x \in A \land y \in B\}$
+
+star - $A^{\ast} = \{\epsilon\} \cup \{x_{1}x_{2} \cdots x_{n} | x_{i} \in A \land n \geq 0\}$
+
+**example**
+
+$A = \{pq, \rho\}$, $B = \{t, UV\}$
+
+union - $A \cup B = \{pq, \rho, t, UV\}$
+
+concatenation -  $A \circ B = {\{pqt, pqUV, {\rho}t, {\rho}UV\}}$
+
 
