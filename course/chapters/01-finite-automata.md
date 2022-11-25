@@ -257,7 +257,7 @@ The $\delta$ is a function that takes a state and an input symbol as arguments, 
 
 Construct an NFA that accepts all and only the strings of 0's and 1's that end in 01.
 
-<img width="742" alt="ex" src="https://user-images.githubusercontent.com/65584733/202918052-f1fdc087-342b-4a3b-97ee-46abefd4de26.png">
+<img width="400" alt="ex" src="https://user-images.githubusercontent.com/65584733/202918052-f1fdc087-342b-4a3b-97ee-46abefd4de26.png"><br />
 
 ### formal definition of nondeterministic finite automata
 
@@ -367,7 +367,7 @@ To prove these statements, we need to consider how $M$ can reach each state, i.e
 
 ### differences between NFA's and DFA's
 
-<img src="https://user-images.githubusercontent.com/65584733/203384662-433349fa-7754-4173-b562-9d6b77acaaed.png" align="right" width="25%" height="25%" />
+<img src="https://user-images.githubusercontent.com/65584733/203384662-433349fa-7754-4173-b562-9d6b77acaaed.png" align="right" width="15%" height="15%" />
 
 DFA Deterministic Finite Automata
 - in a DFA, given the current state we know what the next state will be
@@ -375,11 +375,61 @@ DFA Deterministic Finite Automata
 - it has no choices or randomness
 - it is simple and easy to design
 
-<img src="https://user-images.githubusercontent.com/65584733/203384921-7c76daa8-e5c0-4f75-8b79-22685f4472f0.png" align="right" width="20%" height="20%" />
+<img src="https://user-images.githubusercontent.com/65584733/203384921-7c76daa8-e5c0-4f75-8b79-22685f4472f0.png" align="right" width="15%" height="15%" />
 
 NFA Non-deterministic Finite Automata
 - in a NFA, given the current state there could be multiple next states
 - the next state may be chosen at random
 - all the next states may be chosen in parallel
 
+**1. example of NFA**
+
+$L = \{$ set of all strings that end with 0 $\}$
+
+<br /> <img src="figures/00-ex.png" align="left" width="20%" height="20%" /> <br />
+<br /><br /><br /><br />
+
+1. example string $w = 100$
+<br /><img src="figures/01-ex.png" align="left" width="20%" height="20%" />
+<br /><br /><br /><br /><br />
+
+2.  example string $w = 01$ 
+
+<br /><img src="figures/02-ex.png" align="left" width="20%" height="20%" />
+<br /><br /><br /><br /><br />
+
+**2.  example of NFA**
+
+$L = \{$ set of all strings that start with 0 $\}$ $ = \{{0, 00, 01, 000, \dots}\}$
+
+<br /><img src="figures/03-ex.png" align="left" width="20%" height="20%" />
+<br /><br /><br />
+
+1.  example string $w = 001$
+
+<br /><img src="figures/04-ex.png" align="left" width="25%" height="25%" />
+<br /><br /><br />
+
+2.  example string $w = 101$ (known as dead state configuration)
+
+<br /><img src="figures/05-ex.png" align="left" width="15%" height="15%" />
+<br /><br /><br />
+
+**3.  example of NFA**
+Construct an NFA that accepst sets of all strings over $\{{0, 1}\}$ if length 2
+
+$\Sigma = \{{0, 1}\}$ & $L = \{{00, 01, 10, 11}\}$
+
+<br /><img src="figures/06-ex.png" align="left" width="25%" height="25%" />
+<br /><br /><br />
+
+1.  example string $w = 00$
+
+<br /><img src="figures/07-ex.png" align="left" width="20%" height="20%" />
+<br /><br /><br />
+
+2.  example string $w = 001$
+
+<br /><img src="figures/08-ex.png" align="left" width="20%" height="20%" />
+<br /><br /><br />
 
