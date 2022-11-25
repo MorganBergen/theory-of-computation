@@ -1,6 +1,9 @@
 # Introduction to the Theory of Computation
 
-![](./info/link.html)
+[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+
+[![foo](./info/thumbnail.jpg)](https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev)
+
 
 
 ![](./info/here.svg)
