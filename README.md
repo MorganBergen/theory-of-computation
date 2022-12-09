@@ -54,6 +54,9 @@ Equivalence of PDAs and CFGs
 ## context-free grammars
 
 <p align="center">
-  <img src="./course/chapters/05-figures/00-ex.png" width="500" height="500">
+  <img src="./course/chapters/05-figures/00-ex.png">
 </p>
 
+<br>
+
+![CFG](./course/chapters/05-figures/00-ex.png)
