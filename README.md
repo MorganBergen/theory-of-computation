@@ -51,4 +51,9 @@ Equivalence of PDAs and CFGs
 [companion site](http://www-db.stanford.edu/~ullman/ialc.html)
 
 
+## context-free grammars
+
+<p align="center">
+  <img src="./course/chapters/05-figures/00-ex.png" width="500" height="500">
+</p>
 
